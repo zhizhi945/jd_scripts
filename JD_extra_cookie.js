@@ -1,43 +1,4 @@
-/*
-感谢github@dompling的PR
 
-Author: 2Ya
-
-Github: https://github.com/dompling
-
-===================
-特别说明：
-1.获取多个京东cookie的脚本，不和NobyDa的京东cookie冲突。
-===================
-===================
-使用方式：在代理软件配置好下方配置后，复制 https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，
-若弹出成功则正常使用。否则继续再此页面继续刷新一下试试
-===================
-
-===================
-[MITM]
-hostname = wq.jd.com
-
-【Surge脚本配置】:
-===================
-[Script]
-获取京东Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/wuzhi01/MyActions/main/scripts/JD_extra_cookie.js,script-update-interval=0
-
-===================
-【Loon脚本配置】:
-===================
-[Script]
-http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion tag=获取京东Cookie, script-path=https://raw.githubusercontent.com/wuzhi01/MyActions/main/scripts/JD_extra_cookie.js
-
-
-===================
-【 QX  脚本配置 】 :
-===================
-
-[rewrite_local]
-https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion  url script-request-header https://raw.githubusercontent.com/wuzhi01/MyActions/main/scripts/JD_extra_cookie.js
-
- */
 
 const APIKey = "CookiesJD";
 $ = new API(APIKey, true);

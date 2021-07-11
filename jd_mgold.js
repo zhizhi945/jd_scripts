@@ -1,27 +1,4 @@
 
-/*
-金口碑奖投票
-活动入口：https://prodev.m.jd.com/mall/active/EXf9Q3h3RpG7bY79HtcR5nd6bZ6/index.html
-活动时间：未知
-
-脚本增加环境变量通知开关，默认开启状态，如需关闭请自行设置。
-Z_MGOLD_NOTIFY //通知变量
-
-更新地址：https://raw.githubusercontent.com/i-chenzhe/qx/main/z_mgold.js
-已支持IOS双京东账号, Node.js支持N个京东账号
-脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
-============Quantumultx===============
-[task_local]
-#金口碑奖投票
-5 10 * 3 * https://raw.githubusercontent.com/i-chenzhe/qx/main/z_mgold.js, tag=金口碑奖投票, enabled=true
-================Loon==============
-[Script]
-cron "5 10 * 3 *" script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/z_mgold.js, tag=金口碑奖投票
-===============Surge=================
-金口碑奖投票 = type=cron,cronexp="5 10 * 3 *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/z_mgold.js
-============小火箭=========
-金口碑奖投票 = type=cron,script-path=https://raw.githubusercontent.com/i-chenzhe/qx/main/z_mgold.js, cronexpr="5 10 * 3 *", timeout=3600, enable=true
- */
 const $ = new Env('金口碑奖投票');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
