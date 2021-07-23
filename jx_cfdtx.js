@@ -1,18 +1,4 @@
-/**
-*
-  Name:财富岛提现
-  Address: 京喜App ====>>>> 全民赚大钱
-  Author：MoPoQAQ
-  Update: 2021/2/2 13:00
 
-  Thanks: 
-    💢疯疯💢
-    银河大佬：https://github.com/zbt494
-  获取Token方式：
-  打开【❗️京喜农场❗️】，手动任意完成<工厂任务>、<签到任务>、<金牌厂长任务>一项，提示获取cookie成功即可，然后退出跑任务脚本
-
-*
-**/
 
 const $ = new Env("京喜财富岛提现");
 const JD_API_HOST = "https://m.jingxi.com/";
