@@ -1,5 +1,5 @@
 /* 
-cron 14 10 * * * https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js
+cron "14 10 * * *" jd_NewSign.js, tag:京东签到图形验证
 只支持nodejs环境
 需要安装依赖 
 npm i png-js 或者 npm i png-js -S
@@ -33,7 +33,7 @@ let signFlag = false
 let successNum = 0
 let errorNum = 0
 let JD_API_HOST = 'https://jdjoy.jd.com'
-$.invokeKey = "ztmFUCxcPMNyUq0P"
+$.invokeKey = "RtKLB8euDo7KwsO0"
 let lkt = 0
 if(process.env.JOY_HOST){
   JD_API_HOST = process.env.JOY_HOST
