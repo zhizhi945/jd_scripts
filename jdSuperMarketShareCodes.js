@@ -1,4 +1,25 @@
-
+/*
+ * @Author: LXK9301 https://github.com/LXK9301
+ * @Date: 2020-08-16 18:54:16
+ * @Last Modified by: LXK9301
+ * @Last Modified time: 2021-1-9 21:22:37
+ */
+/*
+东东超市(活动入口：京东APP-》首页-》京东超市-》底部东东超市)
+Some Functions Modified From https://github.com/Zero-S1/JD_tools/blob/master/JD_superMarket.py
+支持京东双账号
+京小超兑换奖品请使用此脚本 https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_blueCoin.js
+脚本兼容:QuantumultX,Surge,Loon,JSBox,Node.js
+// QuantumultX
+[task_local]
+#东东超市
+11 1-23/5 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_superMarket.js, tag=东东超市, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jxc.png, enabled=true
+// Loon
+[Script]
+cron "11 1-23/5 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_superMarket.js,tag=东东超市
+// Surge
+东东超市 = type=cron,cronexp="11 1-23/5 * * *",wake-system=1,timeout=320,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_superMarket.js
+ */
 const $ = new Env('东东超市');
 //Node.js用户请在jdCookie.js处填写京东ck;
 //IOS等用户直接用NobyDa的jd cookie
